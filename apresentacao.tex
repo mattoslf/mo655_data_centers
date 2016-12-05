@@ -37,6 +37,13 @@
   \end{frame}
 }
 
+\AtBeginSubsection[]
+{
+  \begin{frame}<beamer>{Sumário}
+    \tableofcontents[currentsection, currentsubsection]
+  \end{frame}
+}
+
 
 \begin{document}
 
@@ -83,7 +90,7 @@
 			\Large
 				 O consumo de dados pelos usuários está crescendo exponencialmente a cada ano.
 				\begin{figure}[ht]    
-				    \includegraphics[scale=0.3]{consumo.png}
+				    \includegraphics[scale=0.3]{imagens/consumo.png}
 				    \caption{Consumo de dados e voz}
 				    \label{fig:sample_figure}
 				\end{figure}
@@ -97,7 +104,7 @@
 				Por causa disso, o número de servidores em Data Centers deve crescer exponencialmente para acompanhar a demanda, o que traz dificuldades em desenvolver redes eficientes e de baixo custo.
 			\begin{figure}[ht]
 	   
-			   \includegraphics[scale=0.45]{servidores.png}
+			   \includegraphics[scale=0.45]{imagens/servidores.png}
 			    \caption{Número de servidores racks}
 			    \label{fig:sample_figure}
 			\end{figure}
@@ -117,7 +124,7 @@
 			\Large
 			Por outro lado, a criação de novas tecnologias faz com que o custo dos componentes seja cada vez menor.
 			\begin{figure}[ht]    
-						    \includegraphics[scale=0.35]{custo.png}
+						    \includegraphics[scale=0.35]{imagens/custo.png}
 						    \caption{Custo de tecnologias}
 						    \label{fig:sample_figure}
 						\end{figure}
@@ -125,13 +132,127 @@
 			
 		
 	
-\section{Topologias} {Toplogias}
+\section{Topologias}
 	\subsection{Tradicionais}
+
+	\begin{frame} {Topologias Tradicionais}
+	\begin{itemize}
+	 	\item
+	 		Baseadas em Árvores:
+			\begin{itemize}
+			 	\item
+			 		CLOS
+			 	\item
+					Basic Tree
+			 	\item
+					Fat-Tree
+			 	\item
+					VL2
+			 \end{itemize}
+	 \end{itemize}
+
+	\begin{itemize}
+	 	\item
+	 		Recursivas:
+			\begin{itemize}
+			 	\item
+			 		Dcell
+			 	\item
+					Bcube
+			 	\item
+					FiConn
+			 	\item
+					FlatNet
+			 	\item
+					SprintNet
+			 \end{itemize}
+	 \end{itemize}
+	\end{frame}
+
+	\begin{frame} {Topologias Tradicionais}
+		Topologias baseadas em árvores
+	\end{frame}
+
+	\begin{frame} {Topologias Tradicionais}
+		Topologias recursivas
+	\end{frame}
+
+	\begin{frame} {Topologias Recursivas: Dcell}
+		Baseada em células interligadas entre servidores
+		\begin{figure}[ht]    
+			\includegraphics[scale=0.3]{imagens/dcell.png}
+			\label{fig:sample_figure}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame} {Topologias Recursivas: Bcube}
+		Baseada em células interligadas entre switches
+		\begin{figure}[ht]    
+			\includegraphics[scale=0.3]{imagens/bcube.png}
+			\label{fig:sample_figure}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame} {Topologias Recursivas: FiConn}
+		Semelhante à Dcell, mas o grau de cada célula é sempre 2
+		\begin{figure}[ht]    
+			\includegraphics[scale=0.3]{imagens/ficonn.png}
+			\label{fig:sample_figure}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame} {Topologias Recursivas: FlatNet}
+		Semelhante ao BCube, porém é mais escalável
+		\begin{figure}[ht]    
+			\includegraphics[scale=0.3]{imagens/flatnet.png}
+			\label{fig:sample_figure}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame} {Topologias Recursivas: SprintNet}
+		Semelhante à DCell, porém as células são compostas por 4 servidores e 2 switches de 6 portas
+		\begin{figure}[ht]    
+			\includegraphics[scale=0.3]{imagens/springnet.png}
+			\label{fig:sample_figure}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame} {Comparação}
+		\begin{figure}[ht]   
+			\includegraphics[scale=0.35]{imagens/tabela.png}
+			\label{fig:sample_figure}
+		\end{figure}
+	\end{frame}
+
 	\subsection{SDN}
 		
-	\begin{frame} 
-		Ponha aqui seu texto
-	\end{frame}	
+	\begin{frame} {SDN em Datacenters}
+		Com o avanço do SDN, a ideia mais básica é definir servidores virtualizados e criar uma rede virtualizada
+		\begin{figure}[ht]   
+			\includegraphics[scale=0.35]{imagens/inside-sdn.jpg}
+			\label{fig:sample_figure}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame} {SDN em Datacenters}
+		Esta técnica já é utilizada atualmente (PayPal por exemplo)
+		\begin{figure}[ht]   
+			\includegraphics[scale=0.35]{imagens/sdn-1.jpg}
+			\label{fig:sample_figure}
+		\end{figure}
+		
+		\begin{figure}[ht]   
+			\includegraphics[scale=0.35]{imagens/sdn-2.jpg}
+			\label{fig:sample_figure}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame} {SDN em Datacenters}
+		\begin{figure}[ht]   
+			\includegraphics[scale=0.4]{imagens/sdn-3.jpg}
+			\label{fig:sample_figure}
+		\end{figure}
+	\end{frame}
 
 \section{Protocolos}{Protocolos}
 	\subsection{Roteamento}

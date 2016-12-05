@@ -1,67 +1,97 @@
-\beamer@endinputifotherversion {3.33pt}
+\beamer@endinputifotherversion {3.36pt}
 \headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
 \headcommand {\beamer@framepages {1}{1}}
 \headcommand {\sectionentry {1}{Introdu\IeC {\c c}\IeC {\~a}o}{2}{Introdu\IeC {\c c}\IeC {\~a}o}{0}}
 \headcommand {\beamer@sectionpages {1}{1}}
 \headcommand {\beamer@subsectionpages {1}{1}}
-\headcommand {\slideentry {1}{0}{2}{2/2}{}{0}}
+\headcommand {\slideentry {1}{0}{1}{2/2}{}{0}}
 \headcommand {\beamer@framepages {2}{2}}
-\headcommand {\slideentry {1}{0}{3}{3/3}{}{0}}
+\headcommand {\slideentry {1}{0}{2}{3/3}{}{0}}
 \headcommand {\beamer@framepages {3}{3}}
 \headcommand {\sectionentry {2}{Motiva\IeC {\c c}\IeC {\~a}o}{4}{Motiva\IeC {\c c}\IeC {\~a}o}{0}}
 \headcommand {\beamer@sectionpages {2}{3}}
 \headcommand {\beamer@subsectionpages {2}{3}}
-\headcommand {\slideentry {2}{0}{4}{4/4}{}{0}}
+\headcommand {\slideentry {2}{0}{1}{4/4}{}{0}}
 \headcommand {\beamer@framepages {4}{4}}
-\headcommand {\slideentry {2}{0}{5}{5/5}{}{0}}
+\headcommand {\slideentry {2}{0}{2}{5/5}{}{0}}
 \headcommand {\beamer@framepages {5}{5}}
-\headcommand {\slideentry {2}{0}{6}{6/6}{}{0}}
+\headcommand {\slideentry {2}{0}{3}{6/6}{}{0}}
 \headcommand {\beamer@framepages {6}{6}}
-\headcommand {\slideentry {2}{0}{7}{7/7}{}{0}}
+\headcommand {\slideentry {2}{0}{4}{7/7}{}{0}}
 \headcommand {\beamer@framepages {7}{7}}
-\headcommand {\slideentry {2}{0}{8}{8/8}{}{0}}
+\headcommand {\slideentry {2}{0}{5}{8/8}{}{0}}
 \headcommand {\beamer@framepages {8}{8}}
 \headcommand {\sectionentry {3}{Topologias}{9}{Topologias}{0}}
 \headcommand {\beamer@sectionpages {4}{8}}
 \headcommand {\beamer@subsectionpages {4}{8}}
-\headcommand {\slideentry {3}{0}{9}{9/9}{}{0}}
+\headcommand {\slideentry {3}{0}{1}{9/9}{}{0}}
 \headcommand {\beamer@framepages {9}{9}}
 \headcommand {\beamer@subsectionentry {0}{3}{1}{10}{Tradicionais}}\headcommand {\beamer@subsectionpages {9}{9}}
-\headcommand {\beamer@subsectionentry {0}{3}{2}{10}{SDN}}\headcommand {\beamer@subsectionpages {10}{9}}
-\headcommand {\slideentry {3}{2}{1}{10/10}{SDN}{0}}
+\headcommand {\slideentry {3}{1}{1}{10/10}{Tradicionais}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\sectionentry {4}{Protocolos}{12}{Protocolos}{0}}
-\headcommand {\beamer@sectionpages {9}{11}}
-\headcommand {\beamer@subsectionpages {10}{11}}
-\headcommand {\slideentry {4}{0}{2}{12/12}{}{0}}
+\headcommand {\slideentry {3}{1}{2}{11/11}{Tradicionais}{0}}
+\headcommand {\beamer@framepages {11}{11}}
+\headcommand {\slideentry {3}{1}{3}{12/12}{Tradicionais}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\beamer@subsectionentry {0}{4}{1}{13}{Roteamento}}\headcommand {\beamer@subsectionpages {12}{12}}
-\headcommand {\beamer@subsectionentry {0}{4}{2}{13}{Comunica\IeC {\c c}\IeC {\~a}o}}\headcommand {\beamer@subsectionpages {13}{12}}
-\headcommand {\slideentry {4}{2}{1}{13/13}{Comunica\IeC {\c c}\IeC {\~a}o}{0}}
+\headcommand {\slideentry {3}{1}{4}{13/13}{Tradicionais}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\sectionentry {5}{Tend\IeC {\^e}ncias}{15}{Tend\IeC {\^e}ncias}{0}}
-\headcommand {\beamer@sectionpages {12}{14}}
-\headcommand {\beamer@subsectionpages {13}{14}}
-\headcommand {\slideentry {5}{0}{2}{15/15}{}{0}}
+\headcommand {\slideentry {3}{1}{5}{14/14}{Tradicionais}{0}}
+\headcommand {\beamer@framepages {14}{14}}
+\headcommand {\slideentry {3}{1}{6}{15/15}{Tradicionais}{0}}
 \headcommand {\beamer@framepages {15}{15}}
-\headcommand {\slideentry {5}{0}{3}{16/16}{}{0}}
+\headcommand {\slideentry {3}{1}{7}{16/16}{Tradicionais}{0}}
 \headcommand {\beamer@framepages {16}{16}}
-\headcommand {\sectionentry {6}{Conclus\IeC {\~a}o}{17}{Conclus\IeC {\~a}o}{0}}
-\headcommand {\beamer@sectionpages {15}{16}}
-\headcommand {\beamer@subsectionpages {15}{16}}
-\headcommand {\slideentry {6}{0}{4}{17/17}{}{0}}
+\headcommand {\slideentry {3}{1}{8}{17/17}{Tradicionais}{0}}
 \headcommand {\beamer@framepages {17}{17}}
-\headcommand {\slideentry {6}{0}{5}{18/18}{}{0}}
+\headcommand {\slideentry {3}{1}{9}{18/18}{Tradicionais}{0}}
 \headcommand {\beamer@framepages {18}{18}}
-\headcommand {\sectionentry {7}{Pergunta}{19}{Pergunta}{0}}
-\headcommand {\beamer@sectionpages {17}{18}}
-\headcommand {\beamer@subsectionpages {17}{18}}
-\headcommand {\slideentry {7}{0}{6}{19/19}{}{0}}
+\headcommand {\slideentry {3}{1}{10}{19/19}{Tradicionais}{0}}
 \headcommand {\beamer@framepages {19}{19}}
-\headcommand {\slideentry {7}{0}{7}{20/20}{}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{20}{SDN}}\headcommand {\beamer@subsectionpages {10}{19}}
+\headcommand {\slideentry {3}{2}{1}{20/20}{SDN}{0}}
 \headcommand {\beamer@framepages {20}{20}}
-\headcommand {\beamer@partpages {1}{20}}
-\headcommand {\beamer@subsectionpages {19}{20}}
-\headcommand {\beamer@sectionpages {19}{20}}
-\headcommand {\beamer@documentpages {20}}
-\headcommand {\def \inserttotalframenumber {18}}
+\headcommand {\slideentry {3}{2}{2}{21/21}{SDN}{0}}
+\headcommand {\beamer@framepages {21}{21}}
+\headcommand {\slideentry {3}{2}{3}{22/22}{SDN}{0}}
+\headcommand {\beamer@framepages {22}{22}}
+\headcommand {\slideentry {3}{2}{4}{23/23}{SDN}{0}}
+\headcommand {\beamer@framepages {23}{23}}
+\headcommand {\sectionentry {4}{Protocolos}{24}{Protocolos}{0}}
+\headcommand {\beamer@sectionpages {9}{23}}
+\headcommand {\beamer@subsectionpages {20}{23}}
+\headcommand {\slideentry {4}{0}{1}{24/24}{}{0}}
+\headcommand {\beamer@framepages {24}{24}}
+\headcommand {\beamer@subsectionentry {0}{4}{1}{25}{Roteamento}}\headcommand {\beamer@subsectionpages {24}{24}}
+\headcommand {\slideentry {4}{1}{1}{25/25}{Roteamento}{0}}
+\headcommand {\beamer@framepages {25}{25}}
+\headcommand {\beamer@subsectionentry {0}{4}{2}{27}{Comunica\IeC {\c c}\IeC {\~a}o}}\headcommand {\beamer@subsectionpages {25}{26}}
+\headcommand {\slideentry {4}{2}{1}{27/27}{Comunica\IeC {\c c}\IeC {\~a}o}{0}}
+\headcommand {\beamer@framepages {27}{27}}
+\headcommand {\slideentry {4}{2}{2}{28/28}{Comunica\IeC {\c c}\IeC {\~a}o}{0}}
+\headcommand {\beamer@framepages {28}{28}}
+\headcommand {\sectionentry {5}{Tend\IeC {\^e}ncias}{29}{Tend\IeC {\^e}ncias}{0}}
+\headcommand {\beamer@sectionpages {24}{28}}
+\headcommand {\beamer@subsectionpages {27}{28}}
+\headcommand {\slideentry {5}{0}{1}{29/29}{}{0}}
+\headcommand {\beamer@framepages {29}{29}}
+\headcommand {\slideentry {5}{0}{2}{30/30}{}{0}}
+\headcommand {\beamer@framepages {30}{30}}
+\headcommand {\sectionentry {6}{Conclus\IeC {\~a}o}{31}{Conclus\IeC {\~a}o}{0}}
+\headcommand {\beamer@sectionpages {29}{30}}
+\headcommand {\beamer@subsectionpages {29}{30}}
+\headcommand {\slideentry {6}{0}{1}{31/31}{}{0}}
+\headcommand {\beamer@framepages {31}{31}}
+\headcommand {\slideentry {6}{0}{2}{32/32}{}{0}}
+\headcommand {\beamer@framepages {32}{32}}
+\headcommand {\sectionentry {7}{Pergunta}{33}{Pergunta}{0}}
+\headcommand {\beamer@sectionpages {31}{32}}
+\headcommand {\beamer@subsectionpages {31}{32}}
+\headcommand {\slideentry {7}{0}{1}{33/33}{}{0}}
+\headcommand {\beamer@framepages {33}{33}}
+\headcommand {\slideentry {7}{0}{2}{34/34}{}{0}}
+\headcommand {\beamer@framepages {34}{34}}
+\headcommand {\beamer@partpages {1}{34}}
+\headcommand {\beamer@subsectionpages {33}{34}}
+\headcommand {\beamer@sectionpages {33}{34}}
+\headcommand {\beamer@documentpages {34}}
+\headcommand {\def \inserttotalframenumber {33}}
