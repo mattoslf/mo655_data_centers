@@ -149,9 +149,6 @@
 			 	\item
 					VL2
 			 \end{itemize}
-	 \end{itemize}
-
-	\begin{itemize}
 	 	\item
 	 		Recursivas:
 			\begin{itemize}
@@ -237,12 +234,8 @@
 	\begin{frame} {SDN em Datacenters}
 		Esta técnica já é utilizada atualmente (PayPal por exemplo)
 		\begin{figure}[ht]   
-			\includegraphics[scale=0.35]{imagens/sdn-1.jpg}
-			\label{fig:sample_figure}
-		\end{figure}
-		
-		\begin{figure}[ht]   
-			\includegraphics[scale=0.35]{imagens/sdn-2.jpg}
+			\includegraphics[scale=0.3]{imagens/sdn-1.jpg}
+			\includegraphics[scale=0.3]{imagens/sdn-2.jpg}
 			\label{fig:sample_figure}
 		\end{figure}
 	\end{frame}
@@ -257,9 +250,150 @@
 \section{Protocolos}{Protocolos}
 	\subsection{Roteamento}
 	\subsection{Comunicação}
-			
-	\begin{frame} 
-		Ponha aqui seu texto
+
+	\begin{frame} {Protocolos de Comunicação}
+	\begin{itemize}
+	 	\item
+	 		Deadline-Agnostic:
+			\begin{itemize}
+			 	\item
+			 		$DCTCP$
+			 	\item
+					$MPTCP$
+			 	\item
+					$ICTCP$
+			 \end{itemize}
+	 	\item
+	 		Deadline-Aware:
+			\begin{itemize}
+			 	\item
+			 		$D^3$
+			 	\item
+					$D^2TCP$
+			 	\item
+					$DeTail$
+			 	\item
+					$PDQ$
+			 \end{itemize}
+	 \end{itemize}
+	\end{frame}
+
+	\begin{frame} {Protocolos de Comunicação}
+		Protocolos Deadline-Agnostic
+	\end{frame}
+
+	\begin{frame} {Deadline-Aware: $D^3$}
+		\begin{itemize}
+		 	\item
+		 		Recebe a informação do tamanho do fluxo e o deadline
+		 	\item
+				Algoritmo guloso para tentar cumprir o máximo de deadlines possíveis
+		 	\item
+				Roteadores tentam alocar uma taxa adequada para cada fluxo
+		 	\item
+				Emissor envia dados com a mínima taxa alocada no próximo RTT
+		 	\item
+				A fonte periodicamente requisita uma nova taxa baseada no deadline e o tamanho do fluxo restante
+		 \end{itemize}
+	\end{frame}
+
+	\begin{frame} {Deadline-Aware: $D^3$}
+		\begin{itemize}
+		 	\item
+		 		Switches precisam de modificações para lidar com as requisições
+		 	\item
+				Não é compatível com o TCP tradicional, por causa da alocação de largura banda baseado em prioridades sem a informação do deadline no header
+		 	\item
+				Alocação com algoritmo guloso pode alocar largura de banda para fluxos com deadlines distantes ao invés de deadlines próximos, o que pode causar maior perda de deadlines
+		 	\item
+				Requisições constantes de taxas tem um overhead
+		 \end{itemize}
+	\end{frame}
+
+	\begin{frame} {Deadline-Aware: $D^2TCP$}
+		\begin{itemize}
+		 	\item
+		 		Baseado no DCTCP, mas leva o deadline em consideração para redimensionar a janela de congestionamento
+		 	\item
+				Se a maioria dos deadlines são próximos, ainda pode ocorrer congestionamento
+		 	\item
+				Se a maioria dos deadlines são distantes, ocorrerá a sub-utilização da rede e baixa taxa de transferência
+		 	\item
+				Se todos os deadlines são próximos, estão competindo pela largura de banda e nenhum fluxo é adiado, todos os deadlines não serão cumpridos. Caso um fluxo seja adiado, todos os outros podem ser cumpridos.
+		 	\item
+				O problema é saber qual fluxo sacrificar para satisfazer o máximo de deadlines possíveis
+		 \end{itemize}
+	\end{frame}
+
+	\begin{frame} {Deadline-Aware: $DeTail$}
+		\begin{itemize}
+		 	\item
+		 		Fluxos são associados com prioridades e os switches usam filas de prioridades nas portas de saída e de entrada
+		 	\item
+				Cada camada da abstração da rede tem uma função
+		 \end{itemize}
+
+		\begin{figure}[ht]   
+			\includegraphics[scale=0.5]{imagens/detail.png}
+			\label{fig:sample_figure}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame} {Deadline-Aware: $DeTail$}
+		Enlace:
+		\begin{itemize}
+		 	\item
+		 		Controle de fluxo “hop-by-hop” 
+		 	\item
+				Tenta amenizar o bloqueio de “head-of-line” (HOL)
+		 	\item
+				Recebe informações da camada de rede em relação ao balanco de carga adaptativo
+		 	\item
+				Recebe informações da camada de transporte sobre o estado do ECN
+		 \end{itemize}
+	\end{frame}
+
+	\begin{frame} {Deadline-Aware: $DeTail$}
+		Rede:
+		\begin{itemize}
+		 	\item
+		 		Balanço de carga adaptativo baseado em pacotes de acordo com o nível de congestionamento
+		 	\item
+				Pode transmitir pacotes por caminhos que estão com pouca carga
+		 \end{itemize}
+	\end{frame}
+
+	\begin{frame} {Deadline-Aware: $DeTail$}
+		Rede:
+		\begin{itemize}
+		 	\item
+		 		Usa o ECN para marcar fluxos de baixa prioridade quando os bytes transmitidos para o destino ultrapassam um certo limiar
+		 	\item
+				Previne congestionamento persistente
+		 \end{itemize}
+	\end{frame}
+
+	\begin{frame} {Deadline-Aware: $DeTail$}
+		Aplicação:
+		\begin{itemize}
+		 	\item
+		 		Seleciona as prioridades de cada fluxo baseado na sensibilidade de latência
+		 \end{itemize}
+	\end{frame}
+
+	\begin{frame} {Deadline-Aware: $PDQ$}
+		\begin{itemize}
+		 	\item
+		 		Semelhante ao $D^3$, mas ao contrário do $D^3$, escalona taxas de acordo com a criticalidade dos fluxos ao invés da política “first-come first-serve”
+		 	\item
+		 		Duas políticas de alocação, implementadas de forma totalmente distribuída:
+				\begin{itemize}
+				 	\item
+				 		EDF (Earliest Deadline First)
+				 	\item
+						SJF (Shortest Job First)
+				 \end{itemize}
+		\end{itemize}
 	\end{frame}
 
 \section{Tendências}

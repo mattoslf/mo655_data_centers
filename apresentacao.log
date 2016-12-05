@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.22)  5 DEC 2016 12:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.22)  5 DEC 2016 19:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1074,6 +1074,9 @@ LaTeX Warning: Label `fig:sample_figure' multiply defined.
 
 LaTeX Warning: Label `fig:sample_figure' multiply defined.
 
+
+LaTeX Warning: Label `fig:sample_figure' multiply defined.
+
 )
 \openout1 = `apresentacao.aux'.
 
@@ -1330,7 +1333,7 @@ Package pdftex.def Info: logo.png used on input line 136.
 ]
 File: logo.png Graphic file (type png)
  <use logo.png>
-Package pdftex.def Info: logo.png used on input line 170.
+Package pdftex.def Info: logo.png used on input line 167.
 (pdftex.def)             Requested size: 33.22952pt x 28.45274pt.
 
 [11
@@ -1338,14 +1341,14 @@ Package pdftex.def Info: logo.png used on input line 170.
 ]
 File: logo.png Graphic file (type png)
  <use logo.png>
-Package pdftex.def Info: logo.png used on input line 174.
+Package pdftex.def Info: logo.png used on input line 171.
 (pdftex.def)             Requested size: 33.22952pt x 28.45274pt.
  [12
 
 ]
 File: logo.png Graphic file (type png)
  <use logo.png>
-Package pdftex.def Info: logo.png used on input line 178.
+Package pdftex.def Info: logo.png used on input line 175.
 (pdftex.def)             Requested size: 33.22952pt x 28.45274pt.
  [13
 
@@ -1353,17 +1356,17 @@ Package pdftex.def Info: logo.png used on input line 178.
 <imagens/dcell.png, id=484, 573.14125pt x 571.13374pt>
 File: imagens/dcell.png Graphic file (type png)
  <use imagens/dcell.png>
-Package pdftex.def Info: imagens/dcell.png used on input line 186.
+Package pdftex.def Info: imagens/dcell.png used on input line 183.
 (pdftex.def)             Requested size: 171.9437pt x 171.34145pt.
 pdfTeX warning (ext4): destination with the same identifier (name{fig:sample_fi
 gure}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.186 	\end{frame}
+l.183 	\end{frame}
                   
 File: logo.png Graphic file (type png)
  <use logo.png>
-Package pdftex.def Info: logo.png used on input line 186.
+Package pdftex.def Info: logo.png used on input line 183.
 (pdftex.def)             Requested size: 33.22952pt x 28.45274pt.
  [14
 
@@ -1371,17 +1374,17 @@ Package pdftex.def Info: logo.png used on input line 186.
 <imagens/bcube.png, id=512, 930.47626pt x 437.635pt>
 File: imagens/bcube.png Graphic file (type png)
  <use imagens/bcube.png>
-Package pdftex.def Info: imagens/bcube.png used on input line 194.
+Package pdftex.def Info: imagens/bcube.png used on input line 191.
 (pdftex.def)             Requested size: 279.14502pt x 131.2915pt.
 pdfTeX warning (ext4): destination with the same identifier (name{fig:sample_fi
 gure}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.194 	\end{frame}
+l.191 	\end{frame}
                   
 File: logo.png Graphic file (type png)
  <use logo.png>
-Package pdftex.def Info: logo.png used on input line 194.
+Package pdftex.def Info: logo.png used on input line 191.
 (pdftex.def)             Requested size: 33.22952pt x 28.45274pt.
  [15
 
@@ -1389,17 +1392,17 @@ Package pdftex.def Info: logo.png used on input line 194.
 <imagens/ficonn.png, id=540, 682.55pt x 434.62375pt>
 File: imagens/ficonn.png Graphic file (type png)
  <use imagens/ficonn.png>
-Package pdftex.def Info: imagens/ficonn.png used on input line 202.
+Package pdftex.def Info: imagens/ficonn.png used on input line 199.
 (pdftex.def)             Requested size: 204.76657pt x 130.38812pt.
 pdfTeX warning (ext4): destination with the same identifier (name{fig:sample_fi
 gure}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.202 	\end{frame}
+l.199 	\end{frame}
                   
 File: logo.png Graphic file (type png)
  <use logo.png>
-Package pdftex.def Info: logo.png used on input line 202.
+Package pdftex.def Info: logo.png used on input line 199.
 (pdftex.def)             Requested size: 33.22952pt x 28.45274pt.
  [16
 
@@ -1407,20 +1410,20 @@ Package pdftex.def Info: logo.png used on input line 202.
 <imagens/flatnet.png, id=568, 668.4975pt x 650.43pt>
 File: imagens/flatnet.png Graphic file (type png)
  <use imagens/flatnet.png>
-Package pdftex.def Info: imagens/flatnet.png used on input line 210.
+Package pdftex.def Info: imagens/flatnet.png used on input line 207.
 (pdftex.def)             Requested size: 200.5508pt x 195.1305pt.
 pdfTeX warning (ext4): destination with the same identifier (name{fig:sample_fi
 gure}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.210 	\end{frame}
+l.207 	\end{frame}
                   
-Overfull \vbox (10.8609pt too high) detected at line 210
+Overfull \vbox (10.8609pt too high) detected at line 207
  []
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png used on input line 210.
+Package pdftex.def Info: logo.png used on input line 207.
 (pdftex.def)             Requested size: 33.22952pt x 28.45274pt.
  [17
 
@@ -1429,20 +1432,20 @@ Package pdftex.def Info: logo.png used on input line 210.
 File: imagens/springnet.png Graphic file (type png)
 
 <use imagens/springnet.png>
-Package pdftex.def Info: imagens/springnet.png used on input line 218.
+Package pdftex.def Info: imagens/springnet.png used on input line 215.
 (pdftex.def)             Requested size: 250.53793pt x 185.79555pt.
 pdfTeX warning (ext4): destination with the same identifier (name{fig:sample_fi
 gure}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.218 	\end{frame}
+l.215 	\end{frame}
                   
-Overfull \vbox (1.52596pt too high) detected at line 218
+Overfull \vbox (1.52596pt too high) detected at line 215
  []
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png used on input line 218.
+Package pdftex.def Info: logo.png used on input line 215.
 (pdftex.def)             Requested size: 33.22952pt x 28.45274pt.
  [18
 
@@ -1451,17 +1454,17 @@ Package pdftex.def Info: logo.png used on input line 218.
 File: imagens/tabela.png Graphic file (type png)
 
 <use imagens/tabela.png>
-Package pdftex.def Info: imagens/tabela.png used on input line 225.
+Package pdftex.def Info: imagens/tabela.png used on input line 222.
 (pdftex.def)             Requested size: 412.09573pt x 94.50447pt.
 pdfTeX warning (ext4): destination with the same identifier (name{fig:sample_fi
 gure}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.225 	\end{frame}
+l.222 	\end{frame}
                   
 File: logo.png Graphic file (type png)
  <use logo.png>
-Package pdftex.def Info: logo.png used on input line 225.
+Package pdftex.def Info: logo.png used on input line 222.
 (pdftex.def)             Requested size: 33.22952pt x 28.45274pt.
  [19
 
@@ -1469,7 +1472,7 @@ Package pdftex.def Info: logo.png used on input line 225.
 (./apresentacao.toc)
 File: logo.png Graphic file (type png)
  <use logo.png>
-Package pdftex.def Info: logo.png used on input line 227.
+Package pdftex.def Info: logo.png used on input line 224.
 (pdftex.def)             Requested size: 33.22952pt x 28.45274pt.
  [20
 
@@ -1478,67 +1481,60 @@ Package pdftex.def Info: logo.png used on input line 227.
 File: imagens/inside-sdn.jpg Graphic file (type jpg)
 
 <use imagens/inside-sdn.jpg>
-Package pdftex.def Info: imagens/inside-sdn.jpg used on input line 235.
+Package pdftex.def Info: imagens/inside-sdn.jpg used on input line 232.
 (pdftex.def)             Requested size: 224.14073pt x 168.2812pt.
 pdfTeX warning (ext4): destination with the same identifier (name{fig:sample_fi
 gure}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.235 	\end{frame}
+l.232 	\end{frame}
                   
 File: logo.png Graphic file (type png)
  <use logo.png>
-Package pdftex.def Info: logo.png used on input line 235.
+Package pdftex.def Info: logo.png used on input line 232.
 (pdftex.def)             Requested size: 33.22952pt x 28.45274pt.
  [21
 
  <./imagens/inside-sdn.jpg>]
-<imagens/sdn-1.jpg, id=716, 640.3925pt x 480.79625pt>
+<imagens/sdn-1.jpg, id=717, 640.3925pt x 480.79625pt>
 File: imagens/sdn-1.jpg Graphic file (type jpg)
  <use imagens/sdn-1.jpg>
-Package pdftex.def Info: imagens/sdn-1.jpg used on input line 248.
-(pdftex.def)             Requested size: 224.14073pt x 168.2812pt.
-pdfTeX warning (ext4): destination with the same identifier (name{fig:sample_fi
-gure}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.248 	\end{frame}
-                   <imagens/sdn-2.jpg, id=717, 640.3925pt x 480.79625pt>
+Package pdftex.def Info: imagens/sdn-1.jpg used on input line 241.
+(pdftex.def)             Requested size: 192.11923pt x 144.23997pt.
+
+<imagens/sdn-2.jpg, id=718, 640.3925pt x 480.79625pt>
 File: imagens/sdn-2.jpg Graphic file (type jpg)
-
-<use imagens/sdn-2.jpg>
-Package pdftex.def Info: imagens/sdn-2.jpg used on input line 248.
-(pdftex.def)             Requested size: 224.14073pt x 168.2812pt.
+ <use imagens/sdn-2.jpg>
+Package pdftex.def Info: imagens/sdn-2.jpg used on input line 241.
+(pdftex.def)             Requested size: 192.11923pt x 144.23997pt.
 pdfTeX warning (ext4): destination with the same identifier (name{fig:sample_fi
 gure}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.248 	\end{frame}
+l.241 	\end{frame}
                   
-Overfull \vbox (165.90114pt too high) detected at line 248
- []
-
 File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png used on input line 248.
+ <use logo.png>
+Package pdftex.def Info: logo.png used on input line 241.
 (pdftex.def)             Requested size: 33.22952pt x 28.45274pt.
  [22
 
- <./imagens/sdn-1.jpg> <./imagens/sdn-2.jpg>]
-<imagens/sdn-3.jpg, id=743, 640.3925pt x 480.79625pt>
+ <./imagens/sdn-1.jpg> <./imagens/sdn-2.jpg>] <imagens/sdn-3.jpg, id=744, 640.3
+925pt x 480.79625pt>
 File: imagens/sdn-3.jpg Graphic file (type jpg)
- <use imagens/sdn-3.jpg>
-Package pdftex.def Info: imagens/sdn-3.jpg used on input line 255.
+
+<use imagens/sdn-3.jpg>
+Package pdftex.def Info: imagens/sdn-3.jpg used on input line 248.
 (pdftex.def)             Requested size: 256.15245pt x 192.31508pt.
 pdfTeX warning (ext4): destination with the same identifier (name{fig:sample_fi
 gure}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.255 	\end{frame}
+l.248 	\end{frame}
                   
 File: logo.png Graphic file (type png)
  <use logo.png>
-Package pdftex.def Info: logo.png used on input line 255.
+Package pdftex.def Info: logo.png used on input line 248.
 (pdftex.def)             Requested size: 33.22952pt x 28.45274pt.
  [23
 
@@ -1546,12 +1542,12 @@ Package pdftex.def Info: logo.png used on input line 255.
 (./apresentacao.toc)
 File: logo.png Graphic file (type png)
  <use logo.png>
-Package pdftex.def Info: logo.png used on input line 257.
+Package pdftex.def Info: logo.png used on input line 250.
 (pdftex.def)             Requested size: 33.22952pt x 28.45274pt.
  [24
 
 ] (./apresentacao.toc)
-Overfull \hbox (12.16667pt too wide) in paragraph at lines 257--258
+Overfull \hbox (12.16667pt too wide) in paragraph at lines 250--251
 [][][][]     [][][]  
  []
 
@@ -1561,19 +1557,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: logo.png Graphic file (type png)
 
 <use logo.png>
-Package pdftex.def Info: logo.png used on input line 258.
+Package pdftex.def Info: logo.png used on input line 251.
 (pdftex.def)             Requested size: 33.22952pt x 28.45274pt.
  [25
 
 ]
 File: logo.png Graphic file (type png)
  <use logo.png>
-Package pdftex.def Info: logo.png used on input line 258.
+Package pdftex.def Info: logo.png used on input line 251.
 (pdftex.def)             Requested size: 33.22952pt x 28.45274pt.
  [26] (./apresentacao.toc)
 File: logo.png Graphic file (type png)
  <use logo.png>
-Package pdftex.def Info: logo.png used on input line 259.
+Package pdftex.def Info: logo.png used on input line 252.
 (pdftex.def)             Requested size: 33.22952pt x 28.45274pt.
 
 [27
@@ -1581,53 +1577,141 @@ Package pdftex.def Info: logo.png used on input line 259.
 ]
 File: logo.png Graphic file (type png)
  <use logo.png>
-Package pdftex.def Info: logo.png used on input line 263.
+Package pdftex.def Info: logo.png used on input line 279.
 (pdftex.def)             Requested size: 33.22952pt x 28.45274pt.
  [28
 
-] (./apresentacao.toc)
+]
 File: logo.png Graphic file (type png)
  <use logo.png>
-Package pdftex.def Info: logo.png used on input line 265.
+Package pdftex.def Info: logo.png used on input line 283.
 (pdftex.def)             Requested size: 33.22952pt x 28.45274pt.
  [29
 
 ]
 File: logo.png Graphic file (type png)
-
-<use logo.png>
-Package pdftex.def Info: logo.png used on input line 268.
+ <use logo.png>
+Package pdftex.def Info: logo.png used on input line 298.
 (pdftex.def)             Requested size: 33.22952pt x 28.45274pt.
  [30
 
-] (./apresentacao.toc)
+]
 File: logo.png Graphic file (type png)
- <use logo.png>
-Package pdftex.def Info: logo.png used on input line 270.
+
+<use logo.png>
+Package pdftex.def Info: logo.png used on input line 311.
 (pdftex.def)             Requested size: 33.22952pt x 28.45274pt.
  [31
 
 ]
 File: logo.png Graphic file (type png)
  <use logo.png>
-Package pdftex.def Info: logo.png used on input line 273.
+Package pdftex.def Info: logo.png used on input line 326.
 (pdftex.def)             Requested size: 33.22952pt x 28.45274pt.
+ [32
 
-[32
+]
+<imagens/detail.png, id=1045, 411.5375pt x 318.18875pt>
+File: imagens/detail.png Graphic file (type png)
 
-] (./apresentacao.toc)
+<use imagens/detail.png>
+Package pdftex.def Info: imagens/detail.png used on input line 340.
+(pdftex.def)             Requested size: 205.76825pt x 159.09398pt.
+pdfTeX warning (ext4): destination with the same identifier (name{fig:sample_fi
+gure}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.340 	\end{frame}
+                  
+Overfull \vbox (6.75824pt too high) detected at line 340
+ []
+
 File: logo.png Graphic file (type png)
- <use logo.png>
-Package pdftex.def Info: logo.png used on input line 275.
+<use logo.png>
+Package pdftex.def Info: logo.png used on input line 340.
 (pdftex.def)             Requested size: 33.22952pt x 28.45274pt.
  [33
+
+ <./imagens/detail.png>]
+File: logo.png Graphic file (type png)
+ <use logo.png>
+Package pdftex.def Info: logo.png used on input line 354.
+(pdftex.def)             Requested size: 33.22952pt x 28.45274pt.
+ [34
 
 ]
 File: logo.png Graphic file (type png)
  <use logo.png>
-Package pdftex.def Info: logo.png used on input line 278.
+Package pdftex.def Info: logo.png used on input line 364.
 (pdftex.def)             Requested size: 33.22952pt x 28.45274pt.
- [34
+
+[35
+
+]
+File: logo.png Graphic file (type png)
+ <use logo.png>
+Package pdftex.def Info: logo.png used on input line 374.
+(pdftex.def)             Requested size: 33.22952pt x 28.45274pt.
+ [36
+
+]
+File: logo.png Graphic file (type png)
+ <use logo.png>
+Package pdftex.def Info: logo.png used on input line 382.
+(pdftex.def)             Requested size: 33.22952pt x 28.45274pt.
+ [37
+
+]
+File: logo.png Graphic file (type png)
+ <use logo.png>
+Package pdftex.def Info: logo.png used on input line 397.
+(pdftex.def)             Requested size: 33.22952pt x 28.45274pt.
+ [38
+
+]
+(./apresentacao.toc)
+File: logo.png Graphic file (type png)
+ <use logo.png>
+Package pdftex.def Info: logo.png used on input line 399.
+(pdftex.def)             Requested size: 33.22952pt x 28.45274pt.
+ [39
+
+]
+File: logo.png Graphic file (type png)
+ <use logo.png>
+Package pdftex.def Info: logo.png used on input line 402.
+(pdftex.def)             Requested size: 33.22952pt x 28.45274pt.
+ [40
+
+]
+(./apresentacao.toc)
+File: logo.png Graphic file (type png)
+ <use logo.png>
+Package pdftex.def Info: logo.png used on input line 404.
+(pdftex.def)             Requested size: 33.22952pt x 28.45274pt.
+ [41
+
+]
+File: logo.png Graphic file (type png)
+ <use logo.png>
+Package pdftex.def Info: logo.png used on input line 407.
+(pdftex.def)             Requested size: 33.22952pt x 28.45274pt.
+ [42
+
+]
+(./apresentacao.toc)
+File: logo.png Graphic file (type png)
+ <use logo.png>
+Package pdftex.def Info: logo.png used on input line 409.
+(pdftex.def)             Requested size: 33.22952pt x 28.45274pt.
+ [43
+
+]
+File: logo.png Graphic file (type png)
+ <use logo.png>
+Package pdftex.def Info: logo.png used on input line 412.
+(pdftex.def)             Requested size: 33.22952pt x 28.45274pt.
+ [44
 
 ]
 \tf@nav=\write6
@@ -1639,21 +1723,15 @@ Package pdftex.def Info: logo.png used on input line 278.
 \tf@snm=\write8
 \openout8 = `apresentacao.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 280.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 280.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 414.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 414.
 
 (./apresentacao.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 280.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 280.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 414.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 414.
+Package rerunfilecheck Info: File `apresentacao.out' has not changed.
+(rerunfilecheck)             Checksum: 10361495A853372541F0DB8A93BA0B95;573.
 
-
-Package rerunfilecheck Warning: File `apresentacao.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `apresentacao.out':
-(rerunfilecheck)             Before: 31D059076CA5AA5C011CAA13D5697807;573
-(rerunfilecheck)             After:  10361495A853372541F0DB8A93BA0B95;573.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
@@ -1661,30 +1739,29 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 280.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 414.
  ) 
 Here is how much of TeX's memory you used:
- 17286 strings out of 494929
- 329496 string characters out of 6180142
- 391554 words of memory out of 5000000
- 20059 multiletter control sequences out of 15000+600000
- 7456 words of font info for 29 fonts, out of 8000000 for 9000
+ 17364 strings out of 494929
+ 330339 string characters out of 6180142
+ 391564 words of memory out of 5000000
+ 20109 multiletter control sequences out of 15000+600000
+ 13349 words of font info for 52 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  48i,16n,65p,392b,625s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Outline0.4.2.26} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.4.1.24} has been referenced but does not e
-xist, replaced by a fixed one
-
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on apresentacao.pdf (34 pages, 1887227 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/symbols/msam10.pfb>
+Output written on apresentacao.pdf (44 pages, 1977810 bytes).
 PDF statistics:
- 1158 PDF objects out of 1200 (max. 8388607)
- 1071 compressed objects within 11 object streams
- 83 named destinations out of 1000 (max. 500000)
- 243 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1448 PDF objects out of 1728 (max. 8388607)
+ 1341 compressed objects within 14 object streams
+ 101 named destinations out of 1000 (max. 500000)
+ 248 words of extra memory for PDF output out of 10000 (max. 10000000)
 
