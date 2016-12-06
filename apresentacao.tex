@@ -935,7 +935,7 @@
 	\end{frame}
 
 	\begin{frame} {Deadline-Aware: $DeTail$}
-		Rede:
+		Transporte:
 		\begin{itemize}
 		 	\item
 		 		Usa o ECN para marcar fluxos de baixa prioridade quando os bytes transmitidos para o destino ultrapassam um certo limiar
@@ -970,15 +970,9 @@
 
 \section{Tendências}
     \begin{frame} {Facebook Fabric}
-        
-        
-        
-	  \begin{itemize}
-		                        
+	  \begin{itemize}        
 		            \item
 		                  A próxima geração de data center do Facebook
-		     
-		        
 		             \item
 		               Topologia não hierarquizada
 		                
@@ -986,48 +980,56 @@
 		                 Rede de alto desempenho
 		               \item
 		               		Sem oversubscription
-		               		                   
-		     
-		                
 		     \end{itemize}
-	        
-   
               \begin{columns}    
                 \column{0.5\textwidth}   
               \begin{figure}[ht]    
                   \includegraphics[scale=0.3]{scheme_fabric.jpg}
-                    
-                                            
-                 
-                 
                   \label{fig:problems}
               \end{figure}
                          
              \column{0.5\textwidth}   
              \begin{figure}[ht]    
                              \includegraphics[scale=0.23]{phisic_fabric.jpg}
-                          
-                                                                     
-                                           
-                            
                              \label{fig:problems}
                          \end{figure}
-            
-            
             \end{columns}
-            
-             
-          
     \end{frame}
+
+	\begin{frame} {Next-Generation Technologies}
+		SDDC (Software Defined Data Center): Com o avanço do SDN e virtualização de recursos, a tendência é montar data centers sob demanda. Estes data centers definidos por software são independentes da topologia e possuem um gerenciador de recursos fazendo a interface entre a rede física e a rede virtualizada.
+	\end{frame}
+
+	\begin{frame} {Next-Generation Technologies}
+		DCOS (Data Center Operational System): Responsável por gerenciar os recursos físicos, fazendo a interface com os recursos virtualizados, o gerenciamento de usuários e máquinas virtuais.
+	\end{frame}
+
+	\begin{frame} {Next-Generation Technologies}
+		Independente de infraestrutura: Um requisito para os data centers da próxima geração é a independência da infraestrutura, ou seja, não importa qual plataforma, camada de armazenamento ou supervisor sejam usados, o controlador deve saber escalonar recursos de forma eficiente.
+	\end{frame}
 
 \section{Conclusão}
     \begin{frame} 
-        Ponha aqui seu texto
+        \begin{itemize}
+			\item
+				Data centers atualmente possuem um papel muito importante, uma vez que conseguem disponibilizar informações de modo rápido e em qualquer lugar.
+			\item
+				Oferecem serviços de processamento e armazenamento para grandes empresas, sem que haja necessidade de obter um infraestrutura própria.
+			\item
+				A tendência é que a indústria invista cada vez mais em P\&D na estrutura e comunicação de data centers. Uma vez que, a demanda dos usuários cresce exponencialmente.
+		\end{itemize}
     \end{frame}
         
 \section{Pergunta}
     \begin{frame} 
-        Ponha aqui seu texto
+        As redes de datacenters possuem certos requisitos relacionados ao desempenho da rede. Cite 2 desses requisitos e explique como eles afetam o desempenho.\\ 
+\hfill \break
+		Referência: \\
+		Rethinking the Data Center Networking: Architecture, Network Protocols and Resource Sharing\\
+\hfill \break
+		Ting Wang, Zhiyang Su, Yu Xia and Mounir Hamdi\\
+\hfill \break
+		\href{http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=\&arnumber=6990724}{http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=\&arnumber=6990724}
     \end{frame}
     
 \end{document}
