@@ -536,40 +536,136 @@
 	    \end{frame}
 	       
 	
-	 
-            
-    \begin{frame} {DCTCP}
-      				
-   
-	  Falar do DCTCP
+	
+	
+	\begin{frame} {Deadline-Agnostic: \textit{DCTCP}}
+	    
+	    \Large
+	    \begin{itemize}
+	                                 
+	        \item
+	          Buffers menores do que os do TCP tradicional
+	        \item
+	          No switch, quando a ocupância da fila ultrapassa o limiar K, marca os pacotes
+	        \item
+	          O receptor envia um ACK para cada pacote marcado, com a flag ECN-Echo
+	        \item
+	          O emissor ajusta o tamanho a janela de congestionamento, baseado na proporção de pacotes marcados     
+	
+	    \end{itemize}
+	  
+	\end{frame}
+	  
+	\begin{frame} {Deadline-Agnostic: \textit{DCTCP}}
+	    \Large
+	    \begin{itemize}
+	                           
+	    \item
+	      Alta taxa de transferência
+	    \item
+	      Baixa ocupância de buffer
+	    \item
+	      Não lida com o incast
+	  
+		\end{itemize}      
+	    \begin{figure}[ht]    
+	        \includegraphics[scale=0.3]{imagens/dctcp_tcp_queue.png}
+	    \end{figure}
 	        
-                
-    \end{frame}     
-    
-    
-    
- 
-    \begin{frame} {MPTCP}
-      				
-   
-	  Falar do MPTCP
+	
+	    
+	\end{frame}  
+
+
+	
+	\begin{frame} {Deadline-Agnostic: \textit{MPTCP}}
+	                
+	
+	    \Large
+	    \begin{itemize}
+	                           
+	        \item
+	            Aproveita a existência de múltiplos caminhos na camada de agregação e na camada de núcleo        
+	            No switch, quando a ocupância da fila ultrapassa o limiar K, marca os pacotes.
+	        \item
+	            Divide cada fluxo fonte-destino em subfluxos e usa o algoritmo de roteamento de múltiplos caminhos (ECMP).
+	        \item
+	            Apesar de melhorar a taxa de transferência, pode piorar o problema do incast.
+	
+	    \end{itemize}
+	  
+	\end{frame}
+	  
+	\begin{frame} {Deadline-Agnostic: \textit{MPTCP}}
+	    
+	    \Large
+	    \begin{itemize}
+	                           
+	    \item
+	      Inclui os subfluxos na pilha do protocolo, na camada de transporte.
+	  
+	    \begin{figure}[ht]    
+	        \includegraphics[scale=0.5]{imagens/mptcp_subfluxo.jpg}
+	    \end{figure}
 	        
-                
-    \end{frame}     
-    
-    
-    
- 
-    \begin{frame} {ICTCP}
-      				
-   
-	  Falar do ICTCP
+	  \end{itemize}
+	    
+	\end{frame}  
+
+	
+	
+	\begin{frame} {Deadline-Agnostic: \textit{ICTCP}}
+	                
+	
+	    \Large
+	    \begin{itemize}
+	                           
+	        \item
+	            Variante do TCP especializada em resolver o problema do incast.
+	        \item
+	            Previne a perda de pacote ao invés de reenviar  quando há perda.
+	        \item
+	            Receptor sabe a taxa de transferência e largura de banda disponível.
+	
+	    \end{itemize}
+	  
+	\end{frame}
+	  
+	
+	\begin{frame} {Deadline-Agnostic: \textit{ICTCP}}
+	                
+	    \Large
+	    \begin{itemize}
+	    
+	        \item
+	            Receptor usa a largura de banda disponível como indicador para prevenir o incast.
+	        \item
+	            O intervalo do controle de congestionamento é ajustado para o RTT de cada fluxo.
+	        \item
+	            O tamanho da janela de congestionamento deve levar em conta o estado de congestionamento e o requisitado pela aplicação.
+	        \item
+	            Basicamente, o tamanho da janela de congestionamento é ajustado para cada conexão, estimando a largura de banda disponível e o RTT.
+	    \end{itemize}
+	  
+	\end{frame}
+	
+	\begin{frame} {Deadline-Agnostic: \textit{ICTCP}}
+	    
+	    \Large
+	    \begin{itemize}
+	                           
+	    \item
+	      Precisa ser implementado na pilha do TCP
+	  
+	    \begin{figure}[ht]    
+	        \includegraphics[scale=0.7]{imagens/ictcp_pilha.png}
+	    \end{figure}
 	        
-                
-    \end{frame}  
-    
-    
-  
+	  \end{itemize}
+	    
+	\end{frame}  
+
+
     \begin{frame} {Deadline-Aware: $D^3$}
 		\begin{itemize}
 		 	\item
