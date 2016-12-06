@@ -15,7 +15,8 @@
     \setbeamertemplate{itemize subitem}{\color{cordovan}$\blacktriangleright$}
 }
 
-
+\usepackage{multicol}
+\usepackage{color}
 \usepackage[utf8]{inputenc}
 \usetheme{Madrid}
 \usecolortheme{beaver}
@@ -248,15 +249,79 @@
          \end{frame}
     
      \begin{frame} {Basic Tree}
+        
+        \begin{columns}    
+          \column{0.7\textwidth}  
+                       
             \begin{figure}[ht]    
-                \includegraphics[scale=0.38]{basic_tree.png}
+                \includegraphics[scale=0.3]{basic_tree.png}
                 
                
                 \label{fig:consumo}
             \end{figure}
-
-     
+		\column{0.3\textwidth}
+	
+          \begin{figure}[ht]    
+              \includegraphics[scale=0.25]{imagens/tor.jpeg}
+              
+             
+              \label{fig:consumo}
+          \end{figure}
+        \end{columns}
+     		
      \end{frame}
+     
+     
+     \begin{frame} {Basic Tree}
+                          
+          
+         \Large
+         \begin{itemize}
+                            
+          \item
+                 Crescimento do Oversubscription na direção do Core da rede.
+                             
+          \item
+              Oversubscription é a multiplexação dos recursos de banda, para economizar enlaces e equipamentos, sem reduzir o desempenho da rede.
+          \item
+             O Oversubscription total é a soma do Oversubscription no domínio de acesso dos servidores + Oversubscription da agregação\\
+             
+           
+     
+         \end{itemize}
+            
+     \end{frame}
+     
+     \begin{frame}
+     	\Large
+     	\textbf{Exemplo:}
+       \begin{multicols}{2}
+       		\normalsize
+ 					\textbf{Domínio de acesso dos servidores.}
+                
+                 
+                        Switch 48 Portas -- 1 Gbps\\
+                        20 Gbps para uplink -- servidores\\
+                        Oversubscription = (48G/20G) = 2.4\\
+                        1Gbps/2.4 = 416Mbps
+        
+       		\columnbreak
+       	 
+  					\textbf{Agregação}.
+                 
+         
+                     20  Portas -- 10 Gbps\\
+                     8 Para se conectar ao Core\\
+                     12 Para se concetar ao switch Tor\\
+                     Oversubscription = (120G/80G) = 1.5
+       \end{multicols}
+       		\normalsize
+          Oversubscription Total = 2.4 + 1.5 = 3.9\\
+               Velocidade Max de Transmissão dos Servidores = (416Mbps/1.5) = 277Mbps.
+               Se Todos os servidores resolverem transmitir no máximo da capacidade da interface de 1Gbps,
+               então haverá congestionamento e perda de pacotes.
+     \end{frame}
+     
      
      
       \begin{frame} {Fat Tree, baseada na rede CLOS}
@@ -269,6 +334,34 @@
  
       
       \end{frame}
+      
+
+    \begin{frame} {Fat Tree, baseada na rede CLOS}
+          
+  	
+      \Large
+      \begin{itemize}
+                         
+       \item
+              Criada por Charles Clos do MIT.
+                          
+       \item
+          	É uma estrutura rearranjável não bloqueante.
+       \item
+          Fornece uma relação de Oversubscription de 1:1 a todos os servidores.
+         
+        \item
+        	Suporta $n^3$/4 servidores, onde \textit{n} é o número de portas do switch.
+       	\item
+       		No entanto, a complexidade da fiação é O(n3), que é um desafio sério.
+  
+      \end{itemize}
+         
+    
+    \end{frame}
+      
+      
+      
       
        \begin{frame} {VL2}
 
@@ -444,11 +537,53 @@
     \end{frame}
        
 
+	 
+	    \begin{frame} {Traffic Engineering (TE)}
+	    	
+	    	\begin{itemize}
+	         \Large                  
+             \item	
+				Embora a maioria dos esquemas básicos de roteamento busquem rotas entre
+				dois servidores com latência curta, um encaminhamento mais sofisticado exige maior
+				consideração e otimização da latência, confiabilidade, throughput, energia e etc. Esse tipo
+				de otimização é conhecido como problema de engenharia de tráfego (TE).
+
+			\item
+		     Existem poucos mecanismos para a otimização de roteamento DCN hoje em dia.
+		        
+	       \end{itemize}
+	    \end{frame}    
+
+
  
     \begin{frame} {ECMP}
       				
    
-	  Falar do ECMP
+      \begin{itemize}
+          \normalsize
+          \item
+   				
+   				Equal-Cost-MultiPath (ECMP).
+   					  
+          \item
+                Abordagem distribuída de seleção de caminho a nível de fluxo.
+      
+           \item
+             Pode ser configurado com vários saltos seguintes para um determinado destino.
+            
+            \item
+            	Encaminha um pacote de acordo com um
+           		 hash de campos do cabeçalho do pacote.
+      		\item
+      			Divide o tráfego para cada destino em
+      			vários caminhos.
+      		\item
+      			Grandes fluxos podem colidir em seus valores de hash e congestionar uma porta de saída.
+      		\item
+      			É um algoritmo de roteamento utilizado para balanceamento de carga.
+                      
+      \end{itemize}
+               
 	        
                 
     \end{frame}     
@@ -458,22 +593,74 @@
  
     \begin{frame} {VL2}
       				
-   
-	  Falar do VL2
+	
+	     \begin{itemize}
+	         \normalsize
+	         \item
+	     				
+	     			Mecanismo de seleção de caminho distribuído.
+	   					  
+	         \item
+	               Coloca a lógica de seleção nos switches de borda.
+	           
+	           \item
+	              switche da borda encaminha primeiro um fluxo a um switch do núcleo selecionado aleatoriamente.
+	        	\item
+	        		O switch do núcleo encaminha o fluxo para o destino. 
+	     \end{itemize}
 	        
                 
     \end{frame}     
     
+
+  \begin{frame} {DARD}
+	      				
+		
+    \begin{itemize}
+        \normalsize
+        \item
+        Distributed Adaptive Routing for Datacenter
+        Networks (DARD).
+        \item
+		     				
+		   	Seleção de caminho adaptativo distribuído.
+        
+         \item
+         	Difere do ECMP e VL2 em dois aspectos.
+          \item
+             Primeiro, seu algoritmo de seleção de caminho é sensível à carga.
+		   \item
+		  	Se vários fluxos colidem no mesmo caminho, o algoritmo
+		  	deslocará os fluxos do caminho colidido para os caminhos mais ligeiramente carregados.
+		  	 
+    \end{itemize}
+       
+              
+  \end{frame}      
     
     
+    
+   
+     \begin{frame} {DARD}
+   	      				
+   		
+       \begin{itemize}
+           \normalsize
+           \item
+           Em segundo lugar, coloca a lógica de seleção de caminho em sistemas finais em vez de em
+           switches, para facilitar a implantação.
+          
+   		     				
+           
+            \item
+				o switches são habilitados para usar OpenFlow.
+       \end{itemize}
+          
+                 
+     \end{frame}    
  
-    \begin{frame} {DARD}
-      				
-   
-	  Falar do DARD
-	        
-                
-    \end{frame}     
+ 
+
     
     
     \subsection{Transporte}
